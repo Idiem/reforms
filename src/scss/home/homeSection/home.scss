@@ -1,0 +1,30 @@
+@import "./images.scss";
+@import "./text.scss";
+@import "./logoAnimate.scss";
+
+.home {
+  background: $tertiary-color;
+  padding: 10px;
+  position: relative;
+  .container {
+    @include flex(center, start);
+  }
+  .waves {
+    position: absolute;
+    width: 100vw;
+    bottom: -150px;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+    path {
+      fill: $primary-color;
+    }
+    @include md {
+      bottom: -200px;
+    }
+    @include xl {
+      bottom: -100px;
+      height: 300px;
+    }
+  }
+}

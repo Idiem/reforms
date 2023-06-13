@@ -1,0 +1,11 @@
+@import "./variables.scss";
+@import "./_reset.scss";
+@import "./mixins.scss";
+@import "./utils.scss";
+
+//layout
+@import "../layout/header.scss";
+
+//home
+@import "../home/homeSection/home.scss";
+@import "../home/categories/categories.scss";

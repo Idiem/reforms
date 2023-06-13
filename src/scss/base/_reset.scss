@@ -1,0 +1,32 @@
+*,
+root,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0;
+}
+
+body {
+  color: $text-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

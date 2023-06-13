@@ -1,0 +1,36 @@
+//small devices
+@mixin sm {
+  @media (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+//medium devices
+@mixin md {
+  @media (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+//large devices
+@mixin lg {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
+//extra large devices
+@mixin xl {
+  @media (min-width: $screen-xl-min) {
+    @content;
+  }
+}
+
+//flexbox
+@mixin flex($justify, $align: center, $direction: row, $wrap: wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
