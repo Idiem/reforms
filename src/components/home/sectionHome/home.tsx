@@ -9,13 +9,6 @@ export default function Home() {
         <ImagesSectionHome />
         <TextSectionHome />
       </section>
-      <Image
-        className="waves"
-        src="wave.svg"
-        width={1920}
-        height={1080}
-        alt="waves"
-      />
     </div>
   );
 }
