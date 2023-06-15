@@ -20,14 +20,14 @@
   path {
     stroke-dasharray: 330;
     stroke-dashoffset: 330;
-    animation: draw 10s 1s forwards;
-    stroke-width: 1px;
+    animation: draw 5s 1s forwards;
+    stroke-width: 2px;
     stroke: $primary-color;
   }
   g {
     fill-opacity: 0;
     fill: $primary-color;
-    animation: fill 10s 1s forwards;
+    animation: fill 5s 1s forwards;
   }
   svg {
     width: 380px;

@@ -1,4 +1,54 @@
+@mixin coverImage {
+  background-size: cover;
+  object-fit: cover;
+  border:1px solid $tertiary-color;
+  margin-bottom: 10px;
+}
 .categories {
   min-height: calc(100vh);
-  background-color: $primary-color;
+  padding: 20px;
+  @include flex(center,start);
+  .category__description{
+    width: 50%;
+    box-shadow: 0 0 10px $secondary-color;
+  }
+  .category__images{
+    @include flex(center,start);
+    width: 50%;
+    background-color: $tertiary-color;
+    position: relative;
+    .category__image__1{
+      @include coverImage();
+      width: 100%;
+      height: 250px;
+    }
+    .category__image__2{
+      @include coverImage();
+      width: 50%;
+      height: 250px;
+    }
+    .category__image__3{
+      @include coverImage();
+      width: calc(49% - 10px);
+      margin-left: 10px;
+      height: 250px;
+    }
+    .category__image__4{
+      @include coverImage();
+      width: 75%;
+      height: 250px;
+    }
+    .category__image__5{
+      @include coverImage();
+      width: calc(25% - 10px);
+      margin-left: 10px;
+      height: 250px;
+    }
+    .category__image__6{
+      @include coverImage();
+      width: calc(100%);
+      height: 250px;
+    }
+  }
+  
 }

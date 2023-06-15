@@ -5,6 +5,7 @@
 .home {
   background: $tertiary-color;
   padding: 10px;
+  padding-bottom: 80px;
   position: relative;
   .container {
     @include flex(center, start);
