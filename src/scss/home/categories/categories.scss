@@ -1,54 +1,116 @@
-@mixin coverImage {
-  background-size: cover;
-  object-fit: cover;
-  border:1px solid $tertiary-color;
-  margin-bottom: 10px;
-}
 .categories {
   min-height: calc(100vh);
   padding: 20px;
-  @include flex(center,start);
-  .category__description{
-    width: 50%;
-    box-shadow: 0 0 10px $secondary-color;
-  }
-  .category__images{
-    @include flex(center,start);
-    width: 50%;
-    background-color: $tertiary-color;
-    position: relative;
-    .category__image__1{
-      @include coverImage();
-      width: 100%;
-      height: 250px;
+  position: relative;
+  .categories__description {
+    width: 100%;
+    top: 20px;
+    background: $tertiary-color;
+    .categories__description__title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
     }
-    .category__image__2{
-      @include coverImage();
+    p {
+      text-align: justify;
+      padding: 10px;
+    }
+    .categories__description__image {
+      margin: 20px auto;
+      background-size: cover;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .category__images {
+    @include flex(center, flex-start);
+    width: 100%;
+    position: relative;
+    & .category__description {
+      cursor: pointer;
+      width: calc(100% - 6px);
+      position: absolute;
+      height: calc(100% - 6px);
+      margin: 3px;
+
+      .category__title {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        @include flex(center, center);
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        top: calc(50% - 30px);
+        color: $tertiary-color;
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+      }
+    }
+    & > div {
+      margin-bottom: 30px;
+    }
+    .image {
+      background-size: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: 1px solid white;
+    }
+    .category__image {
+      transition: all 0.5s ease;
+      position: relative;
+      &:hover {
+        .category__title {
+          background: rgba(0, 0, 0, 0.8);
+          backdrop-filter: blur(5px);
+        }
+      }
+    }
+    .category__image__1 {
+      width: 100%;
+      height: 300px;
+    }
+    .category__image__2 {
       width: 50%;
       height: 250px;
     }
-    .category__image__3{
-      @include coverImage();
-      width: calc(49% - 10px);
-      margin-left: 10px;
+    .category__image__3 {
+      width: calc(49% - 20px);
+      margin-left: 20px;
       height: 250px;
     }
-    .category__image__4{
-      @include coverImage();
+    .category__image__4 {
       width: 75%;
       height: 250px;
     }
-    .category__image__5{
-      @include coverImage();
-      width: calc(25% - 10px);
-      margin-left: 10px;
+    .category__image__5 {
+      width: calc(25% - 20px);
+      margin-left: 20px;
       height: 250px;
     }
-    .category__image__6{
-      @include coverImage();
+    .category__image__6 {
       width: calc(100%);
-      height: 250px;
+      height: 350px;
     }
   }
-  
+  @include lg {
+    .container {
+      @include flex(center, flex-start);
+    }
+    .categories__description {
+      position: sticky;
+      width: 48%;
+      top: 20px;
+      margin-right: 2%;
+    }
+    .category__images {
+      width: 50%;
+    }
+  }
 }

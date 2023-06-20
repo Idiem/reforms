@@ -1,0 +1,18 @@
+.discounts {
+  padding: 10px;
+  position: relative;
+  .discounts__products {
+    @include flex(center, flex-start);
+  }
+  .discounts__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    color: $tertiary-color;
+    background: $primary-color;
+    padding: 10px;
+  }
+  @include sm {
+    margin-bottom: 100px;
+  }
+}

@@ -3,6 +3,7 @@
   text-align: justify;
   overflow: hidden;
   padding: 10px;
+  background: $tertiary-color;
   h1 {
     text-align: center;
   }
@@ -17,10 +18,11 @@
     @include flex(center, center);
   }
   @include md {
-    width: calc(100% - 350px);
+    width: 50%;
     padding-top: 50px;
   }
   @include lg {
+    width: 50%;
     .only__text {
       width: 100%;
       margin: 0 auto;
@@ -30,11 +32,11 @@
     }
   }
   @include xl {
-    width: calc(100% - 570px);
+    width: 50%;
     padding-left: 50px;
     padding-top: 50px;
     .only__text {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       display: block;
       margin-top: 50px;

@@ -1,0 +1,25 @@
+.footer {
+  background-color: $primary-color;
+  color: $tertiary-color;
+  padding: 20px;
+  .container {
+    text-align: center;
+    @include flex(center, center);
+    .footer_rigths {
+      width: 100%;
+    }
+    .contact {
+      width: 33%;
+      & > div {
+        @include flex(flex-start, flex-start);
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
+    .icon {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+  }
+}

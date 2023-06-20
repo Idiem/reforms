@@ -80,10 +80,10 @@
     max-width: 90vw;
     object-fit: cover;
     position: absolute;
-    -webkit-box-shadow: 26px 22px 5px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 26px 22px 5px 0px rgba(0,0,0,0.5);
-    box-shadow: 26px 22px 5px 0px rgba(0,0,0,0.5);
-    border: 5px solid $tertiary-color;
+    -webkit-box-shadow: 18px 22px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 18px 22px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 18px 22px 5px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid $tertiary-color;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -102,13 +102,13 @@
 }
 @include md {
   .home__images {
-    width: 350px;
+    width: 48%;
   }
 }
 @include xl {
   .home__images {
     height: 560px;
-    width: 570px;
+    width: 48%;
     .home__image1 {
       animation: view 1s 1s forwards;
       left: 0;

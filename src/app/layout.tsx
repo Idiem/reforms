@@ -1,9 +1,10 @@
-import { Asap } from "next/font/google";
+import { Abel } from "next/font/google";
 import Header from "@/components/layout/header";
 import "@/scss/base/main.scss";
 import "./globals.css";
+import Footer from "@/components/layout/footer";
 
-const inter = Asap({ subsets: ["latin"] });
+const inter = Abel({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

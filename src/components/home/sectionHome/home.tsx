@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ImagesSectionHome from "./images";
 import { TextSectionHome } from "./text";
 
