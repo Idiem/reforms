@@ -1,9 +1,11 @@
+/** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  experimental: {
-    externalDir: true,
+  output: "export",
+  images: {
+    loader: "custom",
+    loaderFile: "./app/image.ts",
   },
-  // Potential new config flag:
-  disableExperimentalFeaturesWarning: true,
 };
 
-module.exports = nextConfig;
+module.exports = nextConfigonfig;
