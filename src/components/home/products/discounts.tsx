@@ -27,7 +27,7 @@ export default function Discounts() {
             price={100000}
           />
           <Product
-            image="/Kitchen/3.jpg"
+            image="/kitchen/3.jpg"
             title="Griferia - modelo 1"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             price={100000}
