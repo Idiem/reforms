@@ -5,7 +5,7 @@ export default function Discounts() {
     <div className="discounts">
       <div className="container">
         <h2 className="discounts__title">
-          Conoce nuestros productos destacados en descuento
+          Conoce nuestros productos destacados en descuentos
         </h2>
         <div className="discounts__products">
           <Product
