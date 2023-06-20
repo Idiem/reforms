@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  output: "export",
-  externalDir:
-    true |
-    {
-      enabled: true,
-      silent: true,
-    },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
