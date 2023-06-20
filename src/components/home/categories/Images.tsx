@@ -24,7 +24,7 @@ export default function ImagesCategories() {
           </div>
           <Image
             className="image"
-            src={category.image}
+            src={`${category.image}`}
             priority
             alt={"Primera"}
             width="1200"

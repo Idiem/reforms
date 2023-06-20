@@ -14,7 +14,7 @@ function Kitchen() {
         doloribus.
       </p>
       <Image
-        src="/Img/categories/working.jpg"
+        src="https://idiem.github.io/reforms/Img/categories/working.jpg"
         className="categories__description__image"
         alt="kitchen"
         width="1200"

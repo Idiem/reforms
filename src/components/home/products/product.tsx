@@ -22,7 +22,7 @@ export default function Product(props: {
     >
       <h1>{props.title}</h1>
       <Image
-        src={props.image}
+        src={`https://idiem.github.io/reforms${props.image}`}
         className="image__product"
         alt={props.title}
         width={1200}
